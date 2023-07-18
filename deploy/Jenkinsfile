@@ -12,6 +12,14 @@
     }
 
 
+    stage('Test') {
+      steps {
+        script {
+          sh 'echo "Testing Stage"'
+        }
+      }
+    }
+
     stage('Package') {
       steps {
         script {
@@ -31,15 +39,7 @@
     stage('Clean-Up') {
       steps {
         script {
-          sh 'echo "Cleaning-Up Stage"'
-        }
-      }
-    }
-
-    stage('Test') {
-      steps {
-        script {
-          sh 'echo "Testing Stage"'
+          sh 'echo "Clean-Up Stage"'
         }
       }
     }

@@ -12,6 +12,30 @@
     }
 
 
+    stage('Package') {
+      steps {
+        script {
+          sh 'echo "Packaging Stage"'
+        }
+      }
+    }
+
+    stage('Deploy') {
+      steps {
+        script {
+          sh 'echo "Deployment Stage"'
+        }
+      }
+    }
+
+    stage('Clean-Up') {
+      steps {
+        script {
+          sh 'echo "Cleaning-Up Stage"'
+        }
+      }
+    }
+
     stage('Test') {
       steps {
         script {
@@ -19,5 +43,6 @@
         }
       }
     }
+    
     }
 }

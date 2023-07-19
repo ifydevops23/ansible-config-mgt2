@@ -28,5 +28,22 @@
       }
     }
      
+    stage('Deploy') {
+      steps {
+        script {
+          sh 'echo "Deployment Stage"'
+        }
+      }
+    }
+
+    stage('Clean-Up') {
+      steps {
+        script {
+          sh 'echo "Clean-up Stage"'
+        }
+      }
+    }
+   
+      
     }
 }

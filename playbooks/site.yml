@@ -4,6 +4,14 @@
   tags:
     - always
 
+- name: import webservers file
+  import_playbook: ../static-assignments/uat-webservers.yml
+
+- name: import database file
+  import_playbook: ../static-assignments/db.yml
+
+    
+
 #- name: import common file
 #  import_playbook: ../static-assignments/common.yml
 #  tags:

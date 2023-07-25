@@ -1,12 +1,12 @@
 ---
 # Variable configuration.
-- ansible.builtin.include_tasks: variables.yml
+- include_tasks: variables.yml
 
 # Setup/install tasks.
-- ansible.builtin.include_tasks: setup-RedHat.yml
+- include_tasks: setup-RedHat.yml
   when: ansible_os_family == 'RedHat'
 
-- ansible.builtin.include_tasks: setup-Debian.yml
+- include_tasks: setup-Debian.yml
   when: ansible_os_family == 'Debian'
 
 - ansible.builtin.include_tasks: setup-Archlinux.yml

@@ -115,7 +115,7 @@ mysql_databases:
 # Users.
 mysql_users: 
    - name: example
-     host: 127.0.0.1
+     host: 0.0.0.0
      password: secret
      priv: '*.*:ALL,GRANT'
 

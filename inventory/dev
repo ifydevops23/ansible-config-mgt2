@@ -9,12 +9,11 @@
 [nginx]
 <Nginx-Private-IP-Address>
 
-
-[db:vars]
-ansible_python_interpreter=/usr/bin/python3
-ansible_ssh_user='ec2-user'
-ansible_ssh_private_key_file=/home/ubuntu/keyss.pem
-
-
 [db]
-172.31.92.204 
+172.31.92.204 ansible_ssh_user='ec2-user' ansible_ssh_private_key_file=/home/ubuntu/keyss.pem
+
+#[db:vars]
+#ansible_python_interpreter=/usr/bin/python3
+#ansible_ssh_user='ec2-user'
+#ansible_ssh_private_key_file=/home/ubuntu/keyss.pem
+

@@ -1,6 +1,6 @@
 ---
 - hosts: db
-  become: true
+  become: yes
   ansible_included_var_files:
     - vars/main.yml
   roles:

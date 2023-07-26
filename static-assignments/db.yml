@@ -1,7 +1,7 @@
 ---
 - hosts: db
   become: yes
-  ansible_included_var_files:
+  ansible_include_var_files:
     - vars/main.yml
   roles:
      - mysql

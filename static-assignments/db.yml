@@ -2,7 +2,7 @@
 - hosts: db
   become: yes
   tasks:
-    - include_vars: vars/main.yml
+    - include_vars: vars/RedHat-9.yml
   roles:
      - mysql
 

@@ -11,7 +11,7 @@
 <Nginx-Private-IP-Address>
 
 [db]
-172.31.87.141 ansible_ssh_user='ec2-user' 
+172.31.81.54 ansible_ssh_user='ec2-user' 
 
 #[db:vars]
 #ansible_python_interpreter=/usr/bin/python3

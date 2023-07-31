@@ -1,6 +1,6 @@
 ---
-#- name: import database file
- # import_playbook: ../static-assignments/db.yml
+- name: import database file
+  import_playbook: ../static-assignments/db.yml
 
 - name: import artifactory file
   import_playbook: ../static-assignments/artifactory.yml

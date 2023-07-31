@@ -1,6 +1,7 @@
 ---
 - name: Deploying the PHP Applicaion to Dev Enviroment
-  hosts: todo
+  become: true
+  
 
   tasks:
     - name: install remi and rhel repo

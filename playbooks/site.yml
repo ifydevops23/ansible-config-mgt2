@@ -1,4 +1,7 @@
 ---
+- name: import php-todo file
+  import_playbook: ../static-assignments/deployment.yml
+
 - name: import database file
   import_playbook: ../static-assignments/db.yml
 

@@ -1,14 +1,14 @@
 ---
-- name: import database file
-  import_playbook: ../static-assignments/db.yml
+#- name: import database file
+ # import_playbook: ../static-assignments/db.yml
 
 - name: import artifactory file
   import_playbook: ../static-assignments/artifactory.yml
   tags:
     - always
 
-- name: import webservers file
-  import_playbook: ../static-assignments/uat-webservers.yml
+#- name: import webservers file
+ # import_playbook: ../static-assignments/uat-webservers.yml
 
     
 
